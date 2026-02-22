@@ -13,13 +13,10 @@ def runner(app):
 
 
 @pytest.fixture()
-def picture():
-    picture = {
-        "id": 200,
-        "pic_url": "http://dummyimage.com/230x100.png/dddddd/000000",
-        "event_country": "United States",
-        "event_state": "California",
-        "event_city": "Fremont",
-        "event_date": "11/2/2030"
+def song():
+    song = {
+        "id": 999,
+        "title": "Test song title",
+        "lyrics": "Test lyrics for the song."
     }
-    return dict(picture)
+    return dict(song)
